@@ -9,7 +9,9 @@
 			"version": "latest",
 			"tflint": "latest",
 			"terragrunt": "latest"
-		}
+		},
+		"ghcr.io/devcontainers/features/azure-cli:1": {}
+		}	
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
