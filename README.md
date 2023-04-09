@@ -38,7 +38,7 @@ the repo.
 
 2/ There are multiple ways to authenticate to Azure with Terraform. I want to automate it, yet make it simple for a relative
 terraform newbie like myself. I use a service principal and expect it to be configured on the host system (or WSL if using that).
-There are probably smarter ways. I just want something to get up and running and can always reviist. 
+There are probably smarter ways. I just want something to up and running and can always revisit. 
 Iterations are everything in IT right..
 
 
