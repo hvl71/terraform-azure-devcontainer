@@ -28,3 +28,18 @@ After selecting Default Linux Universal, the VS Code Command Palette asks for ad
 Add feature -> Dev Containers -> Configure Container Feature via VS Code Command Palette
 
 9/ In VS Code Terminal, type 'terraform -version" to verify terraform is accessible in the dev container
+
+In order to make it fast and easy to work with terraform and Azure I've taken a few shortcuts.
+
+1/ I've hardcoded my git user and email in .gitconfig. This is a bit of a quick and dirty to prevent the credential helper from
+the host system to be used. My host system is configured with another git user, I don't want to use in this context. Most users
+with only one git user on their system would probably want the opposite. If that is your need. Simply delete the .gitconfig in 
+the repo.
+
+2/ There are multiple ways to authenticate to Azure with Terraform. I want to automate it, yet make it simple for a relative
+terraform newbie like myself. I use a service principal and expect it to be configured on the host system (or WSL if using that).
+There are probably smarter ways. I just want something to get up and running and can always reviist. 
+Iterations are everything in IT right..
+
+
+
