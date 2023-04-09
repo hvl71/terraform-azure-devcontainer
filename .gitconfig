@@ -1,0 +1,7 @@
+[alias]
+        co = checkout
+        br = branch
+        st = status
+[user]
+        name = hvl71
+        email = henrikvlarsen@gmail.com
