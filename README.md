@@ -1,5 +1,11 @@
-# try-devcontainer
-Inspired by https://www.youtube.com/watch?v=SDa3v4Quj7Y
+# Terraform devcontainer template repo targetting Azure
+
+The idea is to have a github template repo with generic Terraform devcontainer
+functionality targeting Azure. So if you need to spin up AKS, you can base a new repo
+based on the template repo and refine to specifically target your terraform Azure needs.
+
+The content of this repo was inspired by Inspired by https://www.youtube.com/watch?v=SDa3v4Quj7Y
+And created this way:
 
 1/ Create empty repo on GitHub
 
