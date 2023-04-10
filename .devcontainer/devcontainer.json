@@ -19,7 +19,7 @@
 		"HOST_ARM_SUBSCRIPTION_ID": "${localEnv:ARM_SUBSCRIPTION_ID}",
 		"HOST_ARM_TENANT_ID": "${localEnv:ARM_TENANT_ID}"
 		},
-	"remoteEnv": { "test": "${containerEnv:test}" }			
+	"remoteEnv": { "test": "${containerEnv:test}${localEnv:HOME}${localEnv:USERPROFILE}" }			
 	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
