@@ -4,7 +4,7 @@ The idea is to have a github template repo with generic Terraform devcontainer
 functionality targeting Azure. So if you need to spin up AKS, you can base a new repo
 based on the template repo and refine to specifically target your terraform Azure needs.
 
-The content of this repo was inspired by Inspired by https://www.youtube.com/watch?v=SDa3v4Quj7Y
+The content of this repo was Inspired by https://www.youtube.com/watch?v=SDa3v4Quj7Y
 And created this way:
 
 1/ Create empty repo on GitHub
@@ -29,6 +29,8 @@ Add feature -> Dev Containers -> Configure Container Feature via VS Code Command
 
 9/ In VS Code Terminal, type 'terraform -version" to verify terraform is accessible in the dev container
 
+#Shortcuts
+
 In order to make it fast and easy to work with terraform and Azure I've taken a few shortcuts.
 
 1/ I've hardcoded my git user and email in .gitconfig. This is a bit of a quick and dirty to prevent the credential helper from
@@ -41,5 +43,12 @@ terraform newbie like myself. I use a service principal and expect it to be conf
 There are probably smarter ways. I just want something to up and running and can always revisit. 
 Iterations are everything in IT right..
 
+#Authentication
 
+The devcontainer assumes existing authentication is configured. I use an Azure service principal.
+
+ChatGPT explains well how to do it this way:
+
+![Create Azure SP - step 1](./readme.res/1.png "Create an Azure service principal")
+![Create Azure SP - step 2](./readme.res/2.png "Create an Azure service principal continued")
 
