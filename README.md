@@ -49,8 +49,8 @@ The devcontainer assumes existing authentication is configured. I use an Azure s
 
 ChatGPT explains well how to do it this way:
 
-![Create Azure SP - step 1](./readme.res/1.png "Create an Azure service principal")
-![Create Azure SP - step 2](./readme.res/2.png "Create an Azure service principal continued")
+![Create Azure SP - step 1](./.readme/1.png "Create an Azure service principal")
+![Create Azure SP - step 2](./.readme/2.png "Create an Azure service principal continued")
 
 The commands from the screen shots are
 
