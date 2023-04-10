@@ -13,10 +13,12 @@
 		"ghcr.io/devcontainers/features/azure-cli:1": {}
 		},
 	"containerEnv": {
+		"test": "${localEnv:test}",
 		"HOST_ARM_CLIENT_ID": "${localEnv:ARM_CLIENT_ID}",
 		"HOST_ARM_CLIENT_SECRET": "${localEnv:ARM_CLIENT_SECRET}",
 		"HOST_ARM_SUBSCRIPTION_ID": "${localEnv:ARM_SUBSCRIPTION_ID}",
 		"HOST_ARM_TENANT_ID": "${localEnv:ARM_TENANT_ID}"
+
 		}		
 	}
 
