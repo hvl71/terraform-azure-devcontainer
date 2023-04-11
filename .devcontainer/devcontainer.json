@@ -19,6 +19,12 @@
 		"HOST_ARM_SUBSCRIPTION_ID": "${localEnv:ARM_SUBSCRIPTION_ID}",
 		"HOST_ARM_TENANT_ID": "${localEnv:ARM_TENANT_ID}"
 		},
+		//when testing in dev container terminal it becomes clear:
+		//only variables from the HOST, not the WSL host propagates using localEnv
+		//in the below test, only the USERPROFILE value was assigned to an env var test 
+		//accessible in the devcontainer terminal via $test
+		//is it possible at all to get from WSL env? Other options?
+		//see https://containers.dev/implementors/json_reference/
 	"remoteEnv": { "test": "${containerEnv:test}${localEnv:HOME}${localEnv:USERPROFILE}" }			
 	}
 
